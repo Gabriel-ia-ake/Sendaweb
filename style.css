@@ -68,7 +68,7 @@ html.tema-oscuro .btn-accesibilidad {
     background-color: #333333; color: #FFFF00; border: 2px solid #FFFF00;
 }
 
-/* === BRANDING Y LOGO === */
+/* === LOGO === */
 .app-header {
     text-align: center;
     margin-bottom: 2.5rem;
@@ -106,13 +106,12 @@ main { padding: 2rem 1rem; max-width: 800px; margin: 0 auto; }
     border-color: #5C8ED6;
 }
 
-/* Anulamos el azulito y forzamos el modo oscuro en la tarjeta de tutorial */
 html.tema-oscuro .tarjeta-destacada {
     background-color: var(--card-bg) !important;
     border-color: var(--border-color) !important;
 }
 
-/* Feedback Visual: Ilumina la tarjeta cuando el sistema habla */
+/* Ilumina la tarjeta cuando el sistema habla */
 .tarjeta-leyendo {
     border-color: #48B786 !important;
     box-shadow: 0 0 25px rgba(72, 183, 134, 0.6);
@@ -162,7 +161,7 @@ footer p { font-size: 1.2rem; }
 }
 .btn-microfono-flotante i.fa-solid { margin-right: 0; }
 
-/* Indicador visual de que el micrófono está activo */
+/* Indicador de que el micrófono está activo */
 .btn-microfono-flotante.escuchando {
     background-color: #F1C40F;
     color: #121212;
