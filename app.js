@@ -1,4 +1,4 @@
-// 1. Controles de Accesibilidad Directos (Escalado Infinito y Contraste)
+// Controles de Accesibilidad Directos (Escalado de fuente y Contraste)
 let tamanoFuente = 100; 
 
 function cambiarTamanoLetra(cambio) {
@@ -15,7 +15,7 @@ function toggleAltoContraste() {
     else leerTexto("Modo de colores suaves activado");
 }
 
-// 2. Lectura de Texto con Feedback Visual Sincronizado
+// Lectura de Texto con Feedback Visual Sincronizado
 function leerTexto(texto, idTarjeta = null) {
     if ('speechSynthesis' in window) {
         window.speechSynthesis.cancel(); 
@@ -39,7 +39,7 @@ function leerTexto(texto, idTarjeta = null) {
     }
 }
 
-// 3. Reconocimiento de Voz Inteligente con Estado Visual Activo
+// Reconocimiento de Voz Inteligente con Estado Visual Activo
 function iniciarMicrofono() {
     const cajaResultado = document.getElementById('caja-resultado-voz');
     const resultadoTexto = document.getElementById('resultado-voz');
@@ -109,7 +109,7 @@ function iniciarMicrofono() {
     }
 }
 
-// 4. Lógica del Carrusel
+// Lógica del Carrusel
 let indiceSlide = 0;
 function moverCarrusel(direccion) {
     const slides = document.querySelectorAll('.slide');
@@ -126,7 +126,7 @@ function moverCarrusel(direccion) {
     leerTexto("Imagen sobre: " + descripcionImagen, 'seccion-carrusel');
 }
 
-// 5. Botón de Emergencia (SOS WhatsApp)
+// Botón de Emergencia (SOS WhatsApp)
 function enviarAlertaSOS() {
     leerTexto("Abriendo WhatsApp para enviar mensaje de emergencia a un familiar.");
     const mensaje = "¡Hola! Soy un adulto mayor usando SendaFácil. Necesito ayuda rápida, por favor comunícate conmigo.";
@@ -135,7 +135,7 @@ function enviarAlertaSOS() {
     setTimeout(() => { window.open(urlWhatsApp, '_blank'); }, 2000); 
 }
 
-// 6. Asistente Proactivo (Prevención de Frustración)
+// Asistente Proactivo (Por si hay inactividad)
 let tiempoInactividad;
 function reiniciarTemporizador() {
     clearTimeout(tiempoInactividad);
@@ -150,7 +150,7 @@ document.onkeypress = reiniciarTemporizador;
 document.ontouchstart = reiniciarTemporizador; 
 document.onscroll = reiniciarTemporizador;
 
-// 7. Tutorial de Bienvenida
+// Tutorial de Bienvenida
 function iniciarTutorial() {
     clearTimeout(tiempoInactividad); 
     const mensajeTutorial = "Bienvenido a Senda Fácil. Esta página está diseñada para ayudarle a encontrar números importantes rápidamente. " +
