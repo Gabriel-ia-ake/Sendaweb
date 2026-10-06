@@ -15,7 +15,7 @@ function toggleAltoContraste() {
     else leerTexto("Modo de colores suaves activado");
 }
 
-// Lectura de Texto con Feedback Visual Sincronizado
+// Voz de lectura de Texto
 function leerTexto(texto, idTarjeta = null) {
     if ('speechSynthesis' in window) {
         window.speechSynthesis.cancel(); 
@@ -39,7 +39,7 @@ function leerTexto(texto, idTarjeta = null) {
     }
 }
 
-// Reconocimiento de Voz Inteligente con Estado Visual Activo
+// Reconocimiento de Voz con Estado Visual Activo
 function iniciarMicrofono() {
     const cajaResultado = document.getElementById('caja-resultado-voz');
     const resultadoTexto = document.getElementById('resultado-voz');
@@ -109,7 +109,7 @@ function iniciarMicrofono() {
     }
 }
 
-// Lógica del Carrusel
+// Carrusel
 let indiceSlide = 0;
 function moverCarrusel(direccion) {
     const slides = document.querySelectorAll('.slide');
