@@ -9,7 +9,7 @@
 /* Escalado dinámico por JS */
 html { font-size: 100%; } 
 
-/* Tema Oscuro (Alto Contraste) */
+/* Alto Contraste */
 html.tema-oscuro {
     --bg-color: #121212;
     --text-color: #FFFF00;
